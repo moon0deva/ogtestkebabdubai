@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kebab Dubai Warszawa – autentyczny kebab z Bliskiego Wschodu. 3 lokalizacje w Warszawie, jedna czynna 24H. Zamów przez Uber Eats.">
+<meta name="keywords" content="kebab warszawa, kebab dubai warszawa, kebab rakowiecka, kebab mokotów, najlepszy kebab warszawa">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Kebab Dubai | Warszawa">
+<meta property="og:description" content="Autentyczny kebab z najświeższych składników. 3 lokalizacje, jedna otwarta 24H.">
+<meta property="og:locale" content="pl_PL">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://maps.gstatic.com https://maps.googleapis.com https://streetviewpixels-pa.googleapis.com; frame-src https://www.google.com; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; media-src 'none'; upgrade-insecure-requests; block-all-mixed-content;">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Kebab Dubai","servesCuisine":"Middle Eastern","priceRange":"14–40 zł","telephone":"+48226306655","address":{"@type":"PostalAddress","streetAddress":"Rakowiecka 43A","addressLocality":"Warszawa","postalCode":"02-528","addressCountry":"PL"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"2500"}}
+</script>
+<title>Kebab Dubai | Warszawa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@200;300;400;500;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com" crossorigin="anonymous"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{brand:{red:'#B91C1C',gold:'#C9813A',cream:'#E8E0D4',dark:'#080808'}}}},corePlugins:{preflight:false}}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+<button id="back-top" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<nav class="nav" role="navigation">
+  <a href="#hero" class="nav-logo" aria-label="Kebab Dubai">
+    <span class="nav-logo-kebab">Kebab</span>
+    <span class="nav-logo-dubai">Dubai</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#menu"      data-i18n="navMenu">Menu</a></li>
+    <li><a href="#locations" data-i18n="navLocations">Lokalizacje</a></li>
+    <li><a href="#reviews"   data-i18n="navReviews">Opinie</a></li>
+    <li><a href="#contact"   data-i18n="navContact">Kontakt</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <button id="lang-toggle" class="lang-toggle">EN</button>
+    <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="navCta">Zamów teraz</a>
+  </div>
+  <button id="menu-toggle" class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobile-nav" class="mobile-nav" role="dialog" aria-modal="true" aria-hidden="true">
+  <a href="#hero">Kebab Dubai</a>
+  <a href="#menu"      data-i18n="navMenu">Menu</a>
+  <a href="#locations" data-i18n="navLocations">Lokalizacje</a>
+  <a href="#reviews"   data-i18n="navReviews">Opinie</a>
+  <a href="#contact"   data-i18n="navContact">Kontakt</a>
+</div>
+
+<section id="hero" class="hero">
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+  <div class="hero-number" aria-hidden="true"></div>
+
+  <div class="hero-left">
+    <div class="hero-tag reveal">
+      <span class="eyebrow" data-i18n="heroEyebrow">Autentyczny smak Bliskiego Wschodu</span>
+    </div>
+    <div class="hero-title reveal reveal-delay-1">
+      <span class="hero-title-kebab">Kebab</span>
+      <span class="hero-title-dubai">Dubai</span>
+      <span class="hero-title-warsaw" data-i18n="heroEst">Warszawa · Est. Since Day One</span>
+    </div>
+    <p class="hero-desc reveal reveal-delay-2" data-i18n="heroDesc">Trzy lokalizacje w sercu Warszawy. Mięso z rożna przygotowywane codziennie ze świeżych składników. Domowe sosy, tradycyjne receptury, smak, który zostaje w pamięci.</p>
+    <div class="hero-actions reveal reveal-delay-3">
+      <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="btn-gold">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span data-i18n="heroCta1">Zamów przez Uber Eats</span>
+      </a>
+      <a href="#menu" class="btn-ghost">
+        <span data-i18n="heroCta2">Zobacz menu</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats reveal reveal-delay-4">
+      <div class="hero-stat-item">
+        <div class="hero-stat-value"><span data-count="4.1" data-suffix="★" data-decimals="1">4.1★</span></div>
+        <div class="hero-stat-label" data-i18n="heroStat1">Ocena Google</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-value"><span data-count="2500" data-suffix="+">2500+</span></div>
+        <div class="hero-stat-label" data-i18n="heroStat2">Opinii</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-value" style="color:var(--red-bright);">24H</div>
+        <div class="hero-stat-label" data-i18n="heroStat3">Centrum</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-right-inner"></div>
+    <div class="hero-visual-circle">
+      <div class="hero-visual-inner">
+        <div class="hero-visual-kebab">Kebab</div>
+        <div class="hero-visual-dubai">Dubai</div>
+        <div class="hero-visual-line"></div>
+        <div class="hero-visual-sub" data-i18n="heroVisualSub">Warszawa · od 14 zł</div>
+      </div>
+    </div>
+    <div class="hero-badge-float hero-badge-float-1" data-i18n="heroBadge1">🥩 Świeże mięso daily</div>
+    <div class="hero-badge-float hero-badge-float-2" data-i18n="heroBadge2">✓ Uber Eats · Cała Warszawa</div>
+  </div>
+  
+</section>
+<section id="menu" class="section menu-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-header-row">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="menuEyebrow">Co serwujemy</p>
+          <div class="gold-rule"></div>
+          <h2 class="display-lg"><span data-i18n="menuTitle">Nasze</span><br><em style="color:var(--red-bright);" data-i18n="menuTitleAccent">Menu</em></h2>
+        </div>
+        <div class="reveal reveal-delay-2" style="max-width:320px;">
+          <p class="body-lg" data-i18n="menuDesc">Mięso z rożna, przygotowywane ze świeżych składników każdego ranka. Tradycja i smak w każdym kęsie.</p>
+          <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="btn-gold" style="margin-top:28px;display:inline-flex;">
+            <span data-i18n="menuCta">Zamów online</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location tab selector -->
+    <div class="menu-loc-tabs reveal">
+      <button class="menu-loc-tab active" data-loc="rakowiecka">
+        <span class="menu-loc-tab-name">Rakowiecka 43A</span>
+        <span class="menu-loc-tab-sub">Mokotów</span>
+      </button>
+      <button class="menu-loc-tab" data-loc="lwowska">
+        <span class="menu-loc-tab-name">Lwowska 1</span>
+        <span class="menu-loc-tab-sub">Śródmieście</span>
+      </button>
+      <button class="menu-loc-tab" data-loc="centrum">
+        <span class="menu-loc-tab-name">Al. Jerozolimskie</span>
+        <span class="menu-loc-tab-sub">Centrum · 24H</span>
+      </button>
+    </div>
+
+    <!-- RAKOWIECKA PANEL (placeholder) -->
+    <div class="menu-loc-panel active" id="mlp-rakowiecka">
+      <div class="menu-placeholder">
+        <div class="menu-placeholder-icon">🕐</div>
+        <div class="menu-placeholder-title" data-i18n="menuPlaceholderTitle">Cennik wkrótce</div>
+        <p class="menu-placeholder-text" data-i18n="menuPlaceholderText">Menu dla lokalu Rakowiecka 43A zostanie dodane wkrótce. Zapraszamy do odwiedzin!</p>
+        <a href="#locations" class="btn-ghost" style="margin-top:28px;display:inline-flex;">
+          <span data-i18n="navigate">Nawiguj</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- LWOWSKA PANEL -->
+    <div class="menu-loc-panel" id="mlp-lwowska">
+      <div class="menu-panel-inner">
+<div class="menu-price-block">
+          <div class="menu-price-block-header">
+            <span class="menu-price-block-title">Kebab Kurczak &amp; Baranina / Mix</span>
+            <span class="menu-price-block-note" data-i18n="menuSerNote2">Dodatkowy ser 3 zł</span>
+          </div>
+          <div class="menu-price-table">
+            <div class="menu-price-thead">
+              <div class="menu-price-th" data-i18n="menuSize">Rozmiar</div>
+              <div class="menu-price-th" data-i18n="menuThin">Na cienkim</div>
+              <div class="menu-price-th" data-i18n="menuThick">Na grubym</div>
+            </div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Mały</div><div class="menu-price-val">20 <span>zł</span></div><div class="menu-price-val">25 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Średni</div><div class="menu-price-val">25 <span>zł</span></div><div class="menu-price-val">28 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Duży</div><div class="menu-price-val">30 <span>zł</span></div><div class="menu-price-val">32 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Gigant</div><div class="menu-price-val">35 <span>zł</span></div><div class="menu-price-val">36 <span>zł</span></div></div>
+          </div>
+        </div>
+        <div class="menu-price-block">
+          <div class="menu-price-block-header">
+            <span class="menu-price-block-title">Kanapka Falafel</span>
+            <span class="menu-price-block-note" data-i18n="menuSerNote1">Dodatkowy ser +3 zł</span>
+          </div>
+          <div class="menu-price-table">
+            <div class="menu-price-thead">
+              <div class="menu-price-th" data-i18n="menuSize">Rozmiar</div>
+              <div class="menu-price-th" data-i18n="menuThin">Na cienkim</div>
+              <div class="menu-price-th" data-i18n="menuThick">Na grubym</div>
+            </div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Mały</div><div class="menu-price-val">20 <span>zł</span></div><div class="menu-price-val">25 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Średni</div><div class="menu-price-val">25 <span>zł</span></div><div class="menu-price-val">28 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Duży</div><div class="menu-price-val">30 <span>zł</span></div><div class="menu-price-val">32 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Gigant</div><div class="menu-price-val">35 <span>zł</span></div><div class="menu-price-val">36 <span>zł</span></div></div>
+          </div>
+        </div>
+        <div class="menu-price-block menu-price-block--dania">
+          <div class="menu-price-block-header">
+            <span class="menu-price-block-title" data-i18n="menuDania">Dania na Talerzu</span>
+            <span class="menu-price-block-note" data-i18n="menuWynos">Na wynos +1 zł</span>
+          </div>
+          <div class="menu-dania-grid">
+            <div class="menu-dania-cat">
+              <div class="menu-dania-cat-title">Talerz Kurczak / Baranina</div>
+              <div class="menu-dania-items">
+                <div class="menu-dania-item"><span class="menu-dania-size">Mały</span><span class="menu-price-val">35 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Średni</span><span class="menu-price-val">40 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Duży</span><span class="menu-price-val">45 <span>zł</span></span></div>
+              </div>
+            </div>
+            <div class="menu-dania-cat">
+              <div class="menu-dania-cat-title">Talerz Falafel</div>
+              <div class="menu-dania-items">
+                <div class="menu-dania-item"><span class="menu-dania-size">Mały</span><span class="menu-price-val">35 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Średni</span><span class="menu-price-val">40 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Duży</span><span class="menu-price-val">45 <span>zł</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sauces-strip">
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">🧄</span><span>Czosnkowy</span></div>
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">🌶️</span><span>Chili</span></div>
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">🍃</span><span>Tzatziki</span></div>
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">✨</span><span>Dubai Special</span></div>
+          <div class="menu-sauces-divider" aria-hidden="true"></div>
+          <div class="menu-sauces-item"><span style="color:var(--gold);">✓</span><span data-i18n="info1">Płatność gotówką</span></div>
+          <div class="menu-sauces-item"><span style="color:var(--gold);">✓</span><span data-i18n="info2">Na miejscu i na wynos</span></div>
+          <div class="menu-sauces-item"><span style="color:var(--gold);">✓</span><span data-i18n="info5">Opcje wegetariańskie</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTRUM PANEL -->
+    <div class="menu-loc-panel" id="mlp-centrum">
+      <div class="menu-panel-inner">
+<div class="menu-price-block">
+          <div class="menu-price-block-header">
+            <span class="menu-price-block-title">Kebab Kurczak &amp; Baranina / Mix</span>
+            <span class="menu-price-block-note" data-i18n="menuSerNote2">Dodatkowy ser +3 zł</span>
+          </div>
+          <div class="menu-price-table">
+            <div class="menu-price-thead">
+              <div class="menu-price-th" data-i18n="menuSize">Rozmiar</div>
+              <div class="menu-price-th" data-i18n="menuThin">Na cienkim</div>
+              <div class="menu-price-th" data-i18n="menuThick">Na grubym</div>
+            </div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Średni</div><div class="menu-price-val">24 <span>zł</span></div><div class="menu-price-val">25 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Duży</div><div class="menu-price-val">27 <span>zł</span></div><div class="menu-price-val">30 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Gigant</div><div class="menu-price-val">30 <span>zł</span></div><div class="menu-price-val">35 <span>zł</span></div></div>
+          </div>
+        </div>
+        <div class="menu-price-block">
+          <div class="menu-price-block-header">
+            <span class="menu-price-block-title">Kanapka Falafel</span>
+            <span class="menu-price-block-note" data-i18n="menuSerNote1">Dodatkowy ser 3 zł</span>
+          </div>
+          <div class="menu-price-table">
+            <div class="menu-price-thead">
+              <div class="menu-price-th" data-i18n="menuSize">Rozmiar</div>
+              <div class="menu-price-th" data-i18n="menuThin">Na cienkim</div>
+              <div class="menu-price-th" data-i18n="menuThick">Na grubym</div>
+            </div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Średni</div><div class="menu-price-val">24 <span>zł</span></div><div class="menu-price-val">25 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Duży</div><div class="menu-price-val">27 <span>zł</span></div><div class="menu-price-val">30 <span>zł</span></div></div>
+            <div class="menu-price-row"><div class="menu-price-size-label">Gigant</div><div class="menu-price-val">30 <span>zł</span></div><div class="menu-price-val">35 <span>zł</span></div></div>
+          </div>
+        </div>
+        <div class="menu-price-block menu-price-block--dania">
+          <div class="menu-price-block-header">
+            <span class="menu-price-block-title" data-i18n="menuDania">Dania na Talerzu</span>
+            <span class="menu-price-block-note" data-i18n="menuWynos">Na wynos +1 zł</span>
+          </div>
+          <div class="menu-dania-grid">
+            <div class="menu-dania-cat">
+              <div class="menu-dania-cat-title">Talerz Kurczak / Baranina</div>
+              <div class="menu-dania-items">
+                <div class="menu-dania-item"><span class="menu-dania-size">Mały</span><span class="menu-price-val">35 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Średni</span><span class="menu-price-val">40 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Duży</span><span class="menu-price-val">45 <span>zł</span></span></div>
+              </div>
+            </div>
+            <div class="menu-dania-cat">
+              <div class="menu-dania-cat-title">Talerz Falafel</div>
+              <div class="menu-dania-items">
+                <div class="menu-dania-item"><span class="menu-dania-size">Mały</span><span class="menu-price-val">30 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Średni</span><span class="menu-price-val">35 <span>zł</span></span></div>
+                <div class="menu-dania-item"><span class="menu-dania-size">Duży</span><span class="menu-price-val">40 <span>zł</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sauces-strip">
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">🧄</span><span>Czosnkowy</span></div>
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">🌶️</span><span>Chili</span></div>
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">🍃</span><span>Tzatziki</span></div>
+          <div class="menu-sauces-item"><span class="menu-sauces-icon">✨</span><span>Dubai Special</span></div>
+          <div class="menu-sauces-divider" aria-hidden="true"></div>
+          <div class="menu-sauces-item"><span style="color:var(--red-bright);">24H</span><span data-i18n="badgeAlways">Całą dobę</span></div>
+          <div class="menu-sauces-item"><span style="color:var(--gold);">✓</span><span data-i18n="info1">Płatność gotówką</span></div>
+          <div class="menu-sauces-item"><span style="color:var(--gold);">✓</span><span data-i18n="info5">Opcje wegetariańskie</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="about-strip">
+  <div class="about-strip-inner">
+    <div class="about-item reveal">
+      <span class="about-icon">🥩</span>
+      <div class="about-item-title" data-i18n="about1t">Świeże mięso każdego dnia</div>
+      <p class="about-item-text" data-i18n="about1d">Nie używamy mrożonego mięsa. Każdego ranka nowe dostawy prosto od dostawców — smak i jakość, które czuć w każdym kęsie.</p>
+    </div>
+    <div class="about-divider" aria-hidden="true"></div>
+    <div class="about-item reveal reveal-delay-2">
+      <span class="about-icon">🌶️</span>
+      <div class="about-item-title" data-i18n="about2t">Tradycyjne receptury</div>
+      <p class="about-item-text" data-i18n="about2d">Sosy robione ręcznie każdego dnia. Przyprawy sprowadzane z Bliskiego Wschodu. Autentyczny smak bez kompromisów.</p>
+    </div>
+    <div class="about-divider" aria-hidden="true"></div>
+    <div class="about-item reveal reveal-delay-3">
+      <span class="about-icon">🏆</span>
+      <div class="about-item-title" data-i18n="about3t">Najlepiej oceniany</div>
+      <p class="about-item-text" data-i18n="about3d">4.1★ z ponad 2500 opinii na Google Maps. Polecany przez stałych bywalców, pracowników biur i turystów z całego świata.</p>
+    </div>
+  </div>
+</div>
+
+<section id="locations" class="section locations-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="locEyebrow">Znajdź nas</p>
+        <div class="gold-rule"></div>
+        <h2 class="display-lg"><span data-i18n="locTitle">Trzy</span><br><em style="color:var(--gold);" data-i18n="locAccent">Lokalizacje</em></h2>
+      </div>
+    </div>
+    <div class="locations-grid reveal">
+
+      <div class="loc-card">
+        <div class="loc-header">
+          <div>
+            <div class="loc-name" data-i18n="loc1Name">Mokotów</div>
+            <div class="loc-sub" data-i18n="loc1Label">Lokal flagowy</div>
+          </div>
+          <span class="badge-rating">4.1 ★</span>
+        </div>
+        <div class="loc-rule"></div>
+        <div class="loc-info">
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc1Sub">Rakowiecka 43A, Warszawa</span></div>
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span data-i18n="hours1">Poniedziałek – Niedziela: 9:00 – 21:00</span></div>
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.08 3.38 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 6.69 6.69l.38-.38a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+48226306655" class="phone-link" style="color:inherit;text-decoration:none;transition:color .2s;">+48 22 630 66 55</a></div>
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><span data-i18n="loc1Reviews">1 168+ opinii Google</span></div>
+        </div>
+        <div class="map-embed"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.8347!2d21.0059854!3d52.2070268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccc530ef48bb%3A0x31ab367e47d8c3c9!2sKebab+Dubaj!5e0!3m2!1spl!2spl!4v1699999999!5m2!1spl!2spl" title="Kebab Dubai Rakowiecka" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="loc-actions">
+          <a href="https://maps.app.goo.gl/1YwqbNhmcCvrzzfA6" target="_blank" rel="noopener noreferrer" class="btn-loc btn-loc-outline"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="navigate">Nawiguj</span></a>
+          <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="btn-loc btn-loc-gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span data-i18n="uberEats">Uber Eats</span></a>
+        </div>
+        <a href="#menu" class="loc-menu-link" data-see-menu="rakowiecka" data-i18n="seeMenuLink">Zobacz cennik tej lokalizacji →</a>
+      </div>
+
+      <div class="loc-card">
+        <div class="loc-header">
+          <div>
+            <div class="loc-name" data-i18n="loc2Name">Śródmieście</div>
+            <div class="loc-sub" data-i18n="loc2Label">Pole Mokotowskie</div>
+          </div>
+          <span class="badge-rating">4.0 ★</span>
+        </div>
+        <div class="loc-rule"></div>
+        <div class="loc-info">
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc2Sub">Lwowska 1, Warszawa</span></div>
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span data-i18n="hours1">Poniedziałek – Niedziela: 9:00 – 21:00</span></div>
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-i18n="loc2Reviews">590+ opinii Google</span></div>
+        </div>
+        <div class="map-embed"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.3!2d21.0119983!3d52.2204123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecce92b22ffc5f%3A0x4967e51891807b1a!2sDubai+Kebab!5e0!3m2!1spl!2spl!4v1699999999!5m2!1spl!2spl" title="Kebab Dubai Lwowska" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="loc-actions">
+          <a href="https://maps.app.goo.gl/7bde6XcmrAUY5h4d8" target="_blank" rel="noopener noreferrer" class="btn-loc btn-loc-outline"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="navigate">Nawiguj</span></a>
+          <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="btn-loc btn-loc-gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span data-i18n="uberEats">Uber Eats</span></a>
+        </div>
+        <a href="#menu" class="loc-menu-link" data-see-menu="lwowska" data-i18n="seeMenuLink">Zobacz cennik tej lokalizacji →</a>
+      </div>
+
+      <div class="loc-card featured">
+        <div class="loc-header">
+          <div>
+            <div class="loc-name" data-i18n="loc3Name">Centrum</div>
+            <div class="loc-sub" data-i18n="loc3Sub">Al. Jerozolimskie</div>
+          </div>
+          <span class="badge-24h" data-i18n="badge24h">Otwarte 24H</span>
+        </div>
+        <div class="loc-rule" style="background:rgba(185,28,28,0.4);"></div>
+        <div class="loc-info">
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc3Label">Aleje Jerozolimskie</span></div>
+          <div class="loc-info-row open-24"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><strong data-i18n="hours3">Otwarte 24 godziny / 7 dni</strong></div>
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><span data-i18n="loc3Reviews">721+ opinii Google</span></div>
+          <div class="loc-info-row"><svg class="loc-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span data-i18n="loc3Extra">Najlepsza opcja po zmroku</span></div>
+        </div>
+        <div class="map-embed"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.!2d21.001635!3d52.2278709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd9a9f424a41%3A0xf61e31169db4ba6a!2sDubai+Kebab!5e0!3m2!1spl!2spl!4v1699999999!5m2!1spl!2spl" title="Kebab Dubai Centrum" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="loc-actions">
+          <a href="https://maps.app.goo.gl/w7mKVZoQ4QP7MZp29" target="_blank" rel="noopener noreferrer" class="btn-loc btn-loc-outline"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="navigate">Nawiguj</span></a>
+          <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="btn-loc btn-loc-gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span data-i18n="uberEats">Uber Eats</span></a>
+        </div>
+        <a href="#menu" class="loc-menu-link" data-see-menu="centrum" data-i18n="seeMenuLink">Zobacz cennik tej lokalizacji →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="section reviews-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="revEyebrow">Co mówią goście</p>
+        <div class="gold-rule"></div>
+        <h2 class="display-lg"><span data-i18n="revTitle">Opinie</span><br><em style="color:var(--muted);font-size:.65em;" data-i18n="revSub">naszych gości</em></h2>
+      </div>
+    </div>
+    <div class="rating-hero reveal">
+      <div class="rating-big" data-count="4.1" data-suffix="" data-decimals="1">4.1</div>
+      <div class="rating-divider" aria-hidden="true"></div>
+      <div>
+        <div class="rating-stars"><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-empty">★</span></div>
+        <div class="rating-count" data-i18n="revCount">2 500+ opinii · Google Maps · 3 lokalizacje</div>
+      </div>
+      <div class="rating-divider" aria-hidden="true"></div>
+      <div class="rating-tagline" data-i18n="revTagline">"Najlepszy kebab w całej Europie."</div>
+    </div>
+    <div class="reviews-grid reveal">
+      <div class="review-card"><div class="review-stars"><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span></div><blockquote class="review-quote">"Best kebab ever in my Europe life. If I go back to Warsaw, then it is because of it. Try the plate one!"</blockquote><div class="review-accent"></div><div class="review-meta">Google Maps</div><div class="review-location">Rakowiecka 43A</div></div>
+      <div class="review-card"><div class="review-stars"><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span></div><blockquote class="review-quote">"A hidden gem. Właściciel powiedział, że kupują świeże mięso codziennie — to naprawdę czuć. Absolutnie przepyszny."</blockquote><div class="review-accent"></div><div class="review-meta">Google Maps</div><div class="review-location">Lwowska 1</div></div>
+      <div class="review-card"><div class="review-stars"><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span></div><blockquote class="review-quote">"Husajn's kebab is the best in town. Czynne całą dobę — idealne miejsce na kebaba po nocy w mieście."</blockquote><div class="review-accent"></div><div class="review-meta">Google Maps</div><div class="review-location">Centrum · 24H</div></div>
+      <div class="review-card"><div class="review-stars"><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span></div><blockquote class="review-quote">"Bardzo dobry kebab, stosunek ceny do jakości jest świetny. Zawsze świeże mięso i sałatka."</blockquote><div class="review-accent"></div><div class="review-meta">Google Maps</div><div class="review-location">Rakowiecka 43A</div></div>
+      <div class="review-card"><div class="review-stars"><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span></div><blockquote class="review-quote">"One of the best Polish-style kebabs in Warsaw. Thank you for not following the terrible doner trend!"</blockquote><div class="review-accent"></div><div class="review-meta">Google Maps</div><div class="review-location">Lwowska 1</div></div>
+      <div class="review-card"><div class="review-stars"><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star">★</span><span class="review-star off">★</span></div><blockquote class="review-quote">"Sosy są rewelacyjne, mięso smaczne i soczyste. Szybka obsługa nawet w godzinach szczytu."</blockquote><div class="review-accent"></div><div class="review-meta">Google Maps</div><div class="review-location">Rakowiecka 43A</div></div>
+    </div>
+    <div class="text-center reveal" style="margin-top:40px;">
+      <a href="https://maps.app.goo.gl/1YwqbNhmcCvrzzfA6" target="_blank" rel="noopener noreferrer" class="btn-ghost"><span data-i18n="revCta">Napisz opinię na Google</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="order-section">
+  <div class="order-inner section-inner">
+    <div class="order-left">
+      <p class="eyebrow reveal" data-i18n="orderEyebrow">Zamów teraz</p>
+      <div class="gold-rule reveal"></div>
+      <h2 class="display-lg reveal"><span data-i18n="orderTitle">Głodny?</span><br><em style="color:var(--red-bright);" data-i18n="orderAccent">Mamy rozwiązanie.</em></h2>
+      <p class="body-lg reveal reveal-delay-2" style="margin-top:24px;margin-bottom:40px;" data-i18n="orderDesc">Dostawa do domu przez Uber Eats lub odbiór osobisty w jednej z naszych trzech lokalizacji.</p>
+      <div class="reveal reveal-delay-3">
+        <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:13px;padding:16px 40px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span data-i18n="orderCta">Zamów przez Uber Eats</span>
+        </a>
+      </div>
+    </div>
+    <div class="order-right reveal reveal-delay-2">
+      <p class="eyebrow" style="margin-bottom:24px;" data-i18n="orderEyebrow">Zamów teraz</p>
+      <div class="order-options">
+        <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="order-option"><div class="order-option-icon">🛵</div><div><div class="order-option-title" data-i18n="opt1t">Dostawa do domu</div><div class="order-option-sub" data-i18n="opt1d">Uber Eats · Cała Warszawa</div></div><svg class="order-option-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#locations" class="order-option"><div class="order-option-icon">🏃</div><div><div class="order-option-title" data-i18n="opt2t">Odbiór osobisty</div><div class="order-option-sub" data-i18n="opt2d">3 lokalizacje · Rakowiecka / Lwowska / Centrum</div></div><svg class="order-option-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="tel:+48226306655" class="order-option"><div class="order-option-icon">📞</div><div><div class="order-option-title" data-i18n="opt3t">Zamówienie telefoniczne</div><div class="order-option-sub" data-i18n="opt3d">+48 22 630 66 55 · Lokal Rakowiecka</div></div><svg class="order-option-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <p class="order-note" data-i18n="orderNote">Płatność gotówką · Odbiór bez karty</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div>
+      <p class="eyebrow reveal" data-i18n="contEyebrow">Skontaktuj się z nami</p>
+      <div class="gold-rule reveal"></div>
+      <h2 class="display-lg reveal" style="margin-bottom:48px;" data-i18n="contTitle">Kontakt</h2>
+      <div class="contact-info reveal reveal-delay-1">
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.08 3.38 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 6.69 6.69l.38-.38a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="contact-info-label" data-i18n="contPhone">Telefon</div><a href="tel:+48226306655" class="contact-info-value phone-link">+48 22 630 66 55</a><div class="body-sm" style="margin-top:4px;" data-i18n="contPhoneSub">Lokal Rakowiecka 43A</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="contact-info-label" data-i18n="contAddr"></div><div class="contact-info-value" style="cursor:auto;"> * Rakowiecka 43A, 02-528 Warszawa<br>* Lwowska 1, 00-660 Warszawa<br>* Al. Jerozolimskie, Warszawa <span style="color:var(--red-bright);font-size:11px;font-weight:600;">(24H)</span></div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>
+            <div class="contact-info-label" data-i18n="contHours">Godziny otwarcia</div>
+            <div style="margin-top:8px;">
+              <div class="hours-row"><span class="hours-location" data-i18n="hoursRak">Rakowiecka 43A</span><span class="hours-time" data-i18n="hoursTime">09:00 – 21:00</span></div>
+              <div class="hours-row"><span class="hours-location" data-i18n="hoursLwow">Lwowska 1</span><span class="hours-time" data-i18n="hoursTime">09:00 – 21:00</span></div>
+              <div class="hours-row"><span class="hours-location" data-i18n="hoursCent">Centrum</span><span class="hours-time always" data-i18n="hoursAlways">24 / 7</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal reveal-delay-2">
+      <p class="eyebrow" style="margin-bottom:32px;" data-i18n="contFormTitle">Wyślij wiadomość</p>
+      <form id="contact-form" novalidate autocomplete="on">
+        <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+          <input type="text" name="_hp_email" id="_hp_email" tabindex="-1" autocomplete="off" value="">
+        </div>
+        <input type="hidden" name="_csrf_token" id="_csrf_token" value="">
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="fname" data-i18n="labelFirst">Imię</label><input id="fname" type="text" class="form-input" data-i18n-ph="phFirst" placeholder="Jan" required autocomplete="given-name"></div>
+          <div class="form-group"><label class="form-label" for="lname" data-i18n="labelLast">Nazwisko</label><input id="lname" type="text" class="form-input" data-i18n-ph="phLast" placeholder="Kowalski" autocomplete="family-name"></div>
+        </div>
+        <div class="form-group"><label class="form-label" for="email" data-i18n="labelEmail">Adres email</label><input id="email" type="email" class="form-input" data-i18n-ph="phEmail" placeholder="jan@przykład.pl" required autocomplete="email"></div>
+        <div class="form-group"><label class="form-label" for="subject" data-i18n="labelSubject">Temat</label><input id="subject" type="text" class="form-input" data-i18n-ph="phSubject" placeholder="Pytanie o zamówienie..."></div>
+        <div class="form-group"><label class="form-label" for="message" data-i18n="labelMsg">Wiadomość</label><textarea id="message" class="form-textarea form-input" rows="4" data-i18n-ph="phMsg" placeholder="Twoja wiadomość..." required></textarea></div>
+        <button type="submit" class="btn-gold" style="width:100%;justify-content:center;">
+          <span data-i18n="submitBtn">Wyślij wiadomość</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+        <div id="form-success" class="form-success" role="alert" tabindex="-1" style="display:none;"></div>
+        <div id="form-error" role="alert" tabindex="-1" style="display:none;margin-top:12px;padding:12px;background:rgba(185,28,28,0.1);border:1px solid rgba(185,28,28,0.3);color:#fca5a5;font-family:var(--font-sans);font-size:13px;"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name"><span class="footer-brand-kebab">Kebab</span><span class="footer-brand-dubai">Dubai</span></div>
+        <p class="footer-tagline" data-i18n="footTagline">Autentyczny kebab z Bliskiego Wschodu w sercu Warszawy. Świeże mięso, domowe sosy, trzy lokalizacje — jedna czynna całą dobę.</p>
+      </div>
+      <div>
+        <p class="footer-col-title" data-i18n="footNav">Nawigacja</p>
+        <ul class="footer-links">
+          <li><a href="#menu" data-i18n="navMenu">Menu</a></li>
+          <li><a href="#locations" data-i18n="navLocations">Lokalizacje</a></li>
+          <li><a href="#reviews" data-i18n="navReviews">Opinie</a></li>
+          <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title" data-i18n="footLoc">Lokalizacje</p>
+        <ul class="footer-links">
+          <li><a href="https://maps.app.goo.gl/1YwqbNhmcCvrzzfA6" target="_blank" rel="noopener noreferrer">Rakowiecka 43A</a></li>
+          <li><a href="https://maps.app.goo.gl/7bde6XcmrAUY5h4d8" target="_blank" rel="noopener noreferrer">Lwowska 1</a></li>
+          <li><a href="https://maps.app.goo.gl/w7mKVZoQ4QP7MZp29" target="_blank" rel="noopener noreferrer">Centrum (24H)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title" data-i18n="footOrder">Zamów online</p>
+        <a href="https://www.ubereats.com/pl/store/kebab-dubai-rakowiecka/CzNTlSOsU5OJ8WjI43dbuQ" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:10px;padding:11px 20px;display:inline-flex;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Uber Eats
+        </a>
+        <p class="caption" style="margin-top:12px;" data-i18n="footDelivery">Dostawa · Warszawa</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footCopy">© 2025 Kebab Dubai Warszawa. Wszelkie prawa zastrzeżone.</p>
+      <p class="footer-copy" data-i18n="footSub">Smaki Bliskiego Wschodu · Warszawa, Polska</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
